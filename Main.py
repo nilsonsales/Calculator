@@ -151,8 +151,8 @@ def matrix_operation():
         print(element)
 
     # Now we have two lists:
-    # M, where each position correspond to one array
-    # sizes, which correspond to the number of lines from each matrix
+    # M, where each position corresponds to one matrix
+    # sizes, that corresponds to the number of lines from each matrix
 
     return 0
 
