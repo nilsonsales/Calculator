@@ -7,8 +7,42 @@
         Nilson Sales
 """
 
-from functions import potency,matrix_order,root
 
+
+def binary_search(a, n, int_part=False):
+    # Busca binaria de 0 ate a/2
+
+    min = 0
+
+    if(int_part):
+        max = 999999
+        int_part = float(int_part)
+    else:
+        max = int(a)+1
+
+    # Seta o ponto de corte no meio pra iniciar a busca
+    point = int((min + max) / 2)
+
+    while (min+1 < max):
+        #print(min, max)
+
+        if(int_part):
+            result = potency(int_part + (point / 1000000), n)
+        else:
+            result = potency(point, n)
+
+        # Se o resultado foi maior do que o numero que vc ta procurando, seta como max
+        if result > a:
+            max = point
+        else:
+            min = point
+
+        point = int((min + max) / 2)
+
+    if(int_part):
+        return min/1000000
+    else:
+        return min
 
 
 def sum(a, b):
@@ -25,6 +59,34 @@ def mult(a, b):
 
 def div(a, b):
     return a/b
+
+
+def potency(base, exp):
+    if exp == 1:
+        return base
+    elif exp == 0:
+        return 1
+    elif (exp % 2) == 0:  # Se exp par
+        new_exp = (exp/2)
+        p = potency(base, new_exp)
+
+        return p*p
+
+    else:  # Se exp impar
+        new_exp = ((exp-1) / 2)
+        p = potency(base, new_exp)
+
+        return p * p * base
+
+
+def root(a, n):
+    int_part = binary_search(a, n)
+
+    decimal_part = binary_search(a, n, int_part)
+
+    total = str(int_part) + str(decimal_part)[1:]
+
+    return float(total)
 
 
 def matrix_to_int(matrix, row, col):
@@ -47,9 +109,9 @@ def number_operation():
     elif operator == '/':
         result = div(a, b)
     elif operator == '^':
-        result = potency.potency(int(a), int(b))
+        result = potency(int(a), int(b))
     elif operator == 'root':
-        result = root.root(float(a), int(b))
+        result = root(float(a), int(b))
 
     print("= ", result)
     return 0
