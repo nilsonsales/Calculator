@@ -1,5 +1,5 @@
 import sys
-import multmat
+from . import multmat
 
 def f(i,j):
 	return str(i)+','+str(j)
@@ -63,7 +63,7 @@ def mult_cad(M,rowsColumns,optmal):
 		else:
 			stack[i-1] = (stack[i-1] + x)
   
-def main():
+def main3():
 	p = [2,3,5,2,4,4,2]
 	m, s = matrix_chain_order(p)
 	optmal = get_optimal_parens(s, 1, len(p)-1)
@@ -80,4 +80,4 @@ def main():
 	#print (matriz)
 	
 
-main()
+#main()

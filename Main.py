@@ -7,7 +7,7 @@
         Nilson Sales
 """
 
-from functions import potency,matrix_order,root
+from functions import binary_search, matrix_order, mult, multmat, potency, root
 
 
 
@@ -83,15 +83,18 @@ def matrix_operation():
         M.append(temp)
         sizes.append(rows)
 
-
     # printing the matrices
     for element in M:
         print(element)
-
+    print (M[len(M)-1])
     # Now we have two lists:
     # M, where each position corresponds to one matrix
     # sizes, that corresponds to the number of lines from each matrix
 
+    if len(M)==1: print (M[0])
+    elif len(M)==2: 
+        print (multmat.multi_matrix(M[0],M[1]))
+    #else: return
     return 0
 
 

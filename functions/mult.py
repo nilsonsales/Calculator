@@ -7,7 +7,6 @@ def hcf(x, y):
 
     return x
 
-a,b = map(int,sys.stdin.readline().split())
-
-res=int(((a*b)/hcf(a,b)))
-print(res)
+#a,b = map(int,sys.stdin.readline().split())
+#res=int(((a*b)/hcf(a,b)))
+#print(res)
