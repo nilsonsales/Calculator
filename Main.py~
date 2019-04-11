@@ -101,7 +101,8 @@ def matrix_operation():
     # + the number of cols of the last matrix
 
     if len(M)==1: print (M[0])
-    elif len(M)==2: print (multmat.multi_matrix(M[0],M[1]))
+    elif len(M)==2: 
+        print (multmat.multi_matrix(M[0],M[1]))
     #else: return
     return 0
 
