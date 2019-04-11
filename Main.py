@@ -90,11 +90,12 @@ def matrix_operation():
     for element in M:
         print(element)
 
-    print(sizes)
+    print("Sizes:\n", sizes)
 
     # Now we have two lists:
-    # M, where each position corresponds to one matrix
-    # sizes, that corresponds to the number of lines from each matrix
+    # a list 'M' corresponding to the matrices
+    # a list 'sizes', corresponding to the number of lines from each matrix
+    # + the number of cols of the last matrix
 
     return 0
 
