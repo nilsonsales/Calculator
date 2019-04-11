@@ -82,11 +82,15 @@ def matrix_operation():
 
         M.append(temp)
         sizes.append(rows)
+        if i == n_matrices:
+            sizes.append(cols)
 
 
     # printing the matrices
     for element in M:
         print(element)
+
+    print(sizes)
 
     # Now we have two lists:
     # M, where each position corresponds to one matrix
