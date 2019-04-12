@@ -22,11 +22,11 @@ For numeric opperations, we support the following opperations:
 For matrices:
 - Matrix chain multiplication
 
-### How to use
+### Running
 
 Run the Main funcion
 ```console
-$ python Main
+$ python Main.py
 ```
 
 Choose the type of operation:
@@ -35,7 +35,7 @@ Choose the type of operation:
 
 #### Numeric:  
 
-The input must be like:
+Fo numeric opperations, the input must have the following structure:  
 first_number **opperator** second_number
 
 You can see the list of opperators bellow
