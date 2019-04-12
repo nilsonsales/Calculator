@@ -1,7 +1,7 @@
 # Multifunction Calculator
 This project was made for the course of Design and Analysis of Algorithms in the Federal Universtity of Alagoas
 
-Members:  
+**Members**:  
   Luiz Antônio  
   Jonathas Silva  
   Nilson Sales  
@@ -24,7 +24,7 @@ For matrices:
 
 ### Running
 
-Run the Main funcion
+Run the Main function
 ```console
 $ python Main.py
 ```
@@ -53,11 +53,13 @@ P.S.: '64 root 2' means the square root of 64.
 
 #### Matrix opperation:  
 
-For matrix multiplication, it'll ask for some informations before you enter the actual matrix.  
+For matrix multiplication, the program will request some informations before you enter the actual matrix.  
 
 1st - Enter the numer of matrices to multiply
 2nd - Enter the size of the matrix: lines[space]columns (Ex: 3 4)
-3rd - Enter the matrix, line by line, with the elements split by space (Ex: 1 2 3 4)
+3rd - Enter the matrix, line by line, with the elements split by space (Ex: 1 2 3 4)  
+
+Repeat the 2nd and 3rd steps for every addicional matrix.
 
 ### Examples:
 - inputs:  
@@ -88,4 +90,3 @@ For matrix multiplication, it'll ask for some informations before you enter the 
 7 6 5 4  
 
 - outputs:  
-
