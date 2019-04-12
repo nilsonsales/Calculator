@@ -1,4 +1,4 @@
-# Multifunction Calculator
+# Multifunctional Calculator
 This project was made for the course of Design and Analysis of Algorithms in the Federal Universtity of Alagoas
 
 **Members**:  
