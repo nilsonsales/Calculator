@@ -34,7 +34,7 @@ def number_operation():
     a, operator, b = input().split(" ")
 
     if operator == '+':
-        result = addition(a, b)
+        result = addition.addition(a, b)
     elif operator == '-':
         result = sub(int(a), int(b))
     elif operator == '*':
