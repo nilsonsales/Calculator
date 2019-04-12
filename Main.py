@@ -45,9 +45,9 @@ def number_operation():
     if operator == '+':
         result = addition.addition(a, b)
     elif operator == '-':
-        result = sub(int(a), int(b))
+        result = difference(int(a), int(b))
     elif operator == '*':
-        result = mult(int(a), int(b))
+        result = mult(float(a), float(b))
     elif operator == '/':
         result = div(float(a), float(b))
     elif operator == '^':
