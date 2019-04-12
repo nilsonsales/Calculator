@@ -1,7 +1,7 @@
 # Multifunction Calculator
 This project was made for the course of Design and Analysis of Algorithms in the Federal Universtity of Alagoas
 
-Members:
+Members:  
   Luiz Antônio  
   Jonathas Silva  
   Nilson Sales  
@@ -33,7 +33,7 @@ Choose the type of operation:
 - Numeric
 - Matrix
 
-1) Numeric: first_number opperator second_number
+1) Numeric: first_number **opperator** second_number
 
 You can see the list of opperators bellow
 
