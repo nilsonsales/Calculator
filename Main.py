@@ -88,8 +88,6 @@ def matrix_operation():
         sizes.append(rows)
         if i == n_matrices-1:
             sizes.append(cols)
-
-
             
     print ("Matriz resultante: ")
     if len(M)==1:
@@ -98,9 +96,9 @@ def matrix_operation():
         result = multmat.multi_matrix(M[0],M[1])
     elif len(M) > 2: 
         result = matrix_order.mult_mat_cad(M)
-    else: "Quantidade de matrizes inválida"
-
-        print_matrix(result)
+        
+    print_matrix(result)
+    
     return 0
 
 
