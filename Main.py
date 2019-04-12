@@ -91,14 +91,12 @@ def matrix_operation():
 
 
             
-    print ("Matriz resultante: ")
     if len(M)==1:
         result = M[0]
     elif len(M)==2: 
         result = multmat.multi_matrix(M[0],M[1])
-    elif len(M) > 2: 
+    else: 
         result = matrix_order.mult_mat_cad(M)
-    else: "Quantidade de matrizes inválida"
 
         print_matrix(result)
     return 0
