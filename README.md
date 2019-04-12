@@ -2,9 +2,9 @@
 This project was made for the course of Design and Analysis of Algorithms in the Federal Universtity of Alagoas
 
 Members:
-  Luiz Antônio
-  Jonathas Silva
-  Nilson Sales
+  Luiz Antônio  
+  Jonathas Silva  
+  Nilson Sales  
 
 
 ### Functionalities
@@ -55,31 +55,32 @@ P.S.: '64 root 2' means the square root of 64.
 3rd - Enter the matrix, line by line, with the elements split by space (Ex: 1 2 3 4)
 
 ### Examples:
-- inputs: 
-1 
-1234567890 + 98764321 
-1 
-450 ^ 12 
-1 
-64 root 3 
+- inputs:  
+1  
+1234567890 + 98764321  
+1  
+450 ^ 12  
+1  
+64 root 3  
 
-- outputs:
-1333332211 
-68952523554931640625000000000000 
-4.0 
+- outputs:  
+1333332211  
+68952523554931640625000000000000  
+4.0  
 
 
-- input
-2 
-3 
-1 2 
-7 8 
-2 3 
-1 2 3 
-4 5 6 
-3 4 
-4 3 2 1 
-6 5 4 3 
-7 6 5 4 
+- inputs:  
+2  
+3  
+1 2  
+7 8  
+2 3  
+1 2 3  
+4 5 6  
+3 4  
+4 3 2 1  
+6 5 4 3  
+7 6 5 4  
 
-- output 
+- outputs:  
+
