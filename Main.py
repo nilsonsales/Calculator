@@ -10,7 +10,7 @@
 from functions import binary_search, matrix_order, mult, multmat, potency, root, addition
 
 
-def sub(a, b):
+def difference(a, b):
     return a-b
 
 
@@ -34,7 +34,7 @@ def number_operation():
     a, operator, b = input().split(" ")
 
     if operator == '+':
-        result = addition(int(a), int(b))
+        result = addition(a, b)
     elif operator == '-':
         result = sub(int(a), int(b))
     elif operator == '*':
