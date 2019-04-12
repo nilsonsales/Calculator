@@ -38,9 +38,9 @@ def number_operation():
     elif operator == '-':
         result = sub(int(a), int(b))
     elif operator == '*':
-        result = mult(a, b)
+        result = mult(int(a), int(b))
     elif operator == '/':
-        result = div(a, b)
+        result = div(float(a), float(b))
     elif operator == '^':
         result = potency.potency(int(a), int(b))
     elif operator == 'root':
