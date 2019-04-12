@@ -90,3 +90,4 @@ Repeat the 2nd and 3rd steps for every addicional matrix.
 7 6 5 4  
 
 - outputs:  
+[963, 801, 639, 477]
