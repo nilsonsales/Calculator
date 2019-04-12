@@ -34,6 +34,8 @@ Choose the type of operation:
 - Matrix
 
 #### Numeric:  
+
+The input must be like:
 first_number **opperator** second_number
 
 You can see the list of opperators bellow
@@ -50,6 +52,8 @@ You can see the list of opperators bellow
 P.S.: '64 root 2' means the square root of 64.
 
 #### Matrix opperation:  
+
+For matrix multiplication, it'll ask for some informations before you enter the actual matrix.  
 
 1st - Enter the numer of matrices to multiply
 2nd - Enter the size of the matrix: lines[space]columns (Ex: 3 4)
