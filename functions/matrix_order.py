@@ -40,7 +40,7 @@ def mult_cad(M,rowsColumns,optmal):
 		if (x == "("):
 			stack.append("(")
 			i += 1
-			# print (stack)
+
 		elif (x == ")"):
 			#retirnando parenteses e transformando em lista de int
 			stack[i-1] = (stack[i-1] + ")")
@@ -49,7 +49,6 @@ def mult_cad(M,rowsColumns,optmal):
 			R = R.replace("(","")
 			R = map(int, R.split())
 			R = list(R)
-			# print(R)
 
 			# Armazena valor nos dois elementos da matriz
 			M[R[0]-1]=multmat.multi_matrix(M[R[0]-1],M[R[1]-1])
@@ -59,25 +58,15 @@ def mult_cad(M,rowsColumns,optmal):
 			if (i == 1): return M[R[0]-1]
 			i -= 1
 			stack[i-1] = (stack[i-1] + ' %d ' % (R[0]))
-			print (stack, R)
 		else:
 			stack[i-1] = (stack[i-1] + x)
   
-def main3():
-	p = [2,3,5,2,4,4,2]
+def mult_mat_cad(M):
+	n = len(M)
+	p = []
+	for l in M:
+		p.append(len(l))
+		if (M[n-1] == l): p.append(len(l[0]))
 	m, s = matrix_chain_order(p)
 	optmal = get_optimal_parens(s, 1, len(p)-1)
-	matriz = []
-
-	A = [[1,2,1],[1,2,1]]
-	B = [[1,3,2,4,5],[1,3,2,4,5],[1,3,2,4,5]]
-	C = [[1,3],[2,4],[3,2],[4,5],[4,5]]
-	D = [[1,3,2,4],[3,2,4,5]]
-	E = [[1,3,2,4],[3,2,4,5],[1,3,2,4],[3,2,4,5]]
-	F = [[1,3],[2,4],[3,2],[4,5]]
-	matriz = [A,B,C,D,E,F]
-	print (mult_cad(matriz,p,optmal))
-	#print (matriz)
-	
-
-#main()
+	return mult_cad(M,p,optmal)
