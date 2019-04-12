@@ -90,7 +90,6 @@ def matrix_operation():
             sizes.append(cols)
             
 
-    print ("Matriz resultante: ")
     if n_matrices == 1:
         result = M[0]
     elif n_matrices == 2: 
