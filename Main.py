@@ -7,12 +7,7 @@
         Nilson Sales
 """
 
-from functions import binary_search, matrix_order, mult, multmat, potency, root
-
-
-
-def sum(a, b):
-    return a+b
+from functions import binary_search, matrix_order, mult, multmat, potency, root, addition
 
 
 def sub(a, b):
@@ -39,9 +34,9 @@ def number_operation():
     a, operator, b = input().split(" ")
 
     if operator == '+':
-        result = sum(a, b)
+        result = addition(int(a), int(b))
     elif operator == '-':
-        result = sub(a, b)
+        result = sub(int(a), int(b))
     elif operator == '*':
         result = mult(a, b)
     elif operator == '/':
@@ -86,9 +81,10 @@ def matrix_operation():
             sizes.append(cols)
 
     # printing the matrices
-    for element in M:
-        print(element)
-    print (M[len(M)-1])
+    #for element in M:
+    #    print(element)
+    #print (M[len(M)-1])
+
     # Now we have two lists:
     # a list 'M' corresponding to the matrices
     # a list 'sizes', corresponding to the number of lines from each matrix
@@ -120,7 +116,7 @@ def main():
         else:
             print("invalid option")
 
-        print("\n\nEnter the type of the operation:\n1 - Numeric\n2 - Matrix\n0 - Exit calculator")
+        print("\nEnter the type of the operation:\n1 - Numeric\n2 - Matrix\n0 - Exit calculator")
         user_option = int(input())
 
     print("Exiting calculator")
