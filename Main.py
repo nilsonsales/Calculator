@@ -89,40 +89,18 @@ def matrix_operation():
         if i == n_matrices-1:
             sizes.append(cols)
 
-<<<<<<< HEAD
-    print("Sizes:\n", sizes)
 
-=======
-    # printing the matrices
-    #for element in M:
-    #    print(element)
-    #print (M[len(M)-1])
-    #print(sizes)
->>>>>>> cb12d293f8124f86fcffe32a525c12c620ec7002
-
-    # Now we have two lists:
-    # a list 'M' corresponding to the matrices
-    # a list 'sizes', corresponding to the number of lines from each matrix
-    # + the number of cols of the last matrix
-
-<<<<<<< HEAD
+            
     print ("Matriz resultante: ")
     if len(M)==1:
-        print (M[0])
+        result = M[0]
     elif len(M)==2: 
-        print (multmat.multi_matrix(M[0],M[1]))
-    elif len(M) > 2: 
-        print (matrix_order.mult_mat_cad(M))
-    else: "Quantidade de matrizes inválida"
-=======
-    if len(M)==1:
-        print (M[0])
-    elif len(M)==2:
         result = multmat.multi_matrix(M[0],M[1])
+    elif len(M) > 2: 
+        result = matrix_order.mult_mat_cad(M)
+    else: "Quantidade de matrizes inválida"
 
         print_matrix(result)
-    
->>>>>>> cb12d293f8124f86fcffe32a525c12c620ec7002
     return 0
 
 
