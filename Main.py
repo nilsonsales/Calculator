@@ -11,11 +11,11 @@ from functions import binary_search, matrix_order, mult, multmat, potency, root
 
 
 
-def sum(a, b):
+def addition(a, b):
     return a+b
 
 
-def sub(a, b):
+def difference(a, b):
     return a-b
 
 
@@ -39,9 +39,9 @@ def number_operation():
     a, operator, b = input().split(" ")
 
     if operator == '+':
-        result = sum(a, b)
+        result = addition(a, b)
     elif operator == '-':
-        result = sub(a, b)
+        result = difference(a, b)
     elif operator == '*':
         result = mult(a, b)
     elif operator == '/':
