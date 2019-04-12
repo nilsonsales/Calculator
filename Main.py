@@ -29,6 +29,15 @@ def matrix_to_int(matrix, row, col):
     return matrix
 
 
+def print_matrix(matrix):
+    lines = len(matrix)
+
+    print(" ")
+    for line in range(lines):
+        print(matrix[line])
+        
+
+
 def number_operation():
     print("Enter your simple equation (e.g.: 2 ^ 3 )")
     a, operator, b = input().split(" ")
@@ -46,7 +55,7 @@ def number_operation():
     elif operator == 'root':
         result = root.root(float(a), int(b))
 
-    print("= ", result)
+    print(result)
     return 0
 
 
@@ -94,8 +103,10 @@ def matrix_operation():
     if len(M)==1:
         print (M[0])
     elif len(M)==2:
-        print (multmat.multi_matrix(M[0],M[1]))
-    #else: return
+        result = multmat.multi_matrix(M[0],M[1])
+
+        print_matrix(result)
+    
     return 0
 
 
