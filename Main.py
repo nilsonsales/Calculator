@@ -90,11 +90,11 @@ def matrix_operation():
             sizes.append(cols)
             
     print ("Matriz resultante: ")
-    if len(M)==1:
+    if n_matrices == 1:
         result = M[0]
-    elif len(M)==2: 
+    elif n_matrices == 2: 
         result = multmat.multi_matrix(M[0],M[1])
-    elif len(M) > 2: 
+    elif n_matrices > 2: 
         result = matrix_order.mult_mat_cad(M)
         
     print_matrix(result)
