@@ -89,16 +89,27 @@ def matrix_operation():
         if i == n_matrices-1:
             sizes.append(cols)
             
-
+<<<<<<< HEAD
+    if len(M)==1:
+=======
     print ("Matriz resultante: ")
     if n_matrices == 1:
+>>>>>>> fafda0571c7733ed925c24d431730bf0699e31ea
         result = M[0]
     elif n_matrices == 2: 
         result = multmat.multi_matrix(M[0],M[1])
+<<<<<<< HEAD
     else: 
+        result = matrix_order.mult_mat_cad(M)
+
+        print_matrix(result)
+=======
+    elif n_matrices > 2: 
         result = matrix_order.mult_mat_cad(M)
         
     print_matrix(result)
+    
+>>>>>>> fafda0571c7733ed925c24d431730bf0699e31ea
     return 0
 
 
