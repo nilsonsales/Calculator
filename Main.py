@@ -77,13 +77,14 @@ def matrix_operation():
 
         M.append(temp)
         sizes.append(rows)
-        if i == n_matrices:
+        if i == n_matrices-1:
             sizes.append(cols)
 
     # printing the matrices
     #for element in M:
     #    print(element)
     #print (M[len(M)-1])
+    #print(sizes)
 
     # Now we have two lists:
     # a list 'M' corresponding to the matrices
