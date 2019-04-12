@@ -88,20 +88,16 @@ def matrix_operation():
     # printing the matrices
     for element in M:
         print(element)
-<<<<<<< HEAD
     print (M[len(M)-1])
-=======
-
-    print("Sizes:\n", sizes)
-
->>>>>>> 58086306621d925ebf8f267b12fefa0a368e9f52
     # Now we have two lists:
     # a list 'M' corresponding to the matrices
     # a list 'sizes', corresponding to the number of lines from each matrix
     # + the number of cols of the last matrix
 
-    if len(M)==1: print (M[0])
-    elif len(M)==2: print (multmat.multi_matrix(M[0],M[1]))
+    if len(M)==1:
+        print (M[0])
+    elif len(M)==2:
+        print (multmat.multi_matrix(M[0],M[1]))
     #else: return
     return 0
 
